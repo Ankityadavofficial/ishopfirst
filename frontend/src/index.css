@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.header-bg {
+    border-bottom: 3px solid #FAFAFB;
+    padding: 10px;
+}
+
+.responsive-menu {
+    background: rgba(0,0,0,0.5) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+}
+
+.banner-bg {
+    background: linear-gradient(67deg, #E71D3A 0%, #ECC7C1 45%, #EFCAC4 58%, #E4BDB8 70%, #42A8FE 100%) 0% 0% no-repeat padding-box;
+}
+
+.second-banner{
+    background: transparent linear-gradient(68deg, #E71D3A 0%, #0C0C0C 19%, #0C0C0C 39%, #3E3E3E 58%, #404040 82%, #42A8FE 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.third-banner{
+    background: transparent linear-gradient(68deg, #E71D3A 0%, #E12241 27%, #E51F72 39%, #EA505A 53%, #446BD2 82%, #42A8FE 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+}
