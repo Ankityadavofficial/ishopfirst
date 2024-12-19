@@ -16,16 +16,20 @@ server.use(express.json());
 
 const corsOptions = {
     origin: function (origin, callback) {
-        const allowedOrigins = ['http://localhost:5173'];
+        const allowedOrigins = [
+            'https://ishopfirst-frontend.onrender.com',
+            'http://localhost:5173' // For local development
+        ];
         if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
             callback(null, true);
         } else {
             callback(new Error('Not allowed by CORS'));
         }
-    }
+    },
+    credentials: true, // Include this if you're sending cookies or authentication headers
 };
-
 server.use(cors(corsOptions));
+
 server.use(express.static("./public"));
 
 // Router grouping
