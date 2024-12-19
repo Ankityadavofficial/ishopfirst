@@ -21,7 +21,7 @@ export default function Main(props) {
     const [address, setAddress] = useState([])
     const [orders, setOrders] = useState([])
 
-    const API_BASE_URL = 'http://localhost:5000';
+    const API_BASE_URL = 'https://ishopfirst-backend.onrender.com';
     const CATEGORY_URL = '/category';
     const COLOR_URL = "/color";
     const PRODUCT_URL = "/product";
